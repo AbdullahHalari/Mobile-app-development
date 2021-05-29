@@ -1,0 +1,15 @@
+flutter create <ROJECT NAME>
+flutter run 
+
+
+
+
+
+
+MaterialApp (home :)
+
+scaffold (body: )
+
+Container (child: )
+
+Row/Column (children)
