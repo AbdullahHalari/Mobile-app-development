@@ -1,15 +1,32 @@
 flutter create <ROJECT NAME>
 flutter run 
 
+stateless (static run time per changing na ho)
 
-
-
+statefull()
 
 
 MaterialApp (home :)
-
+appbar 
+title
 scaffold (body: )
 
 Container (child: )
+height or width
 
 Row/Column (children)
+mainaxisalignment: main....
+crossaxisalignment:cross...
+
+text()
+textfield()
+sizebox( width or height)
+
+
+single child scroll view
+
+decoration box decoration
+
+borderradius.()
+padding edgeinsets.only
+

@@ -26,7 +26,7 @@ class _State extends State<LoginScreen> {
             constraints: BoxConstraints.expand(),
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('background1.png'),
+                image: AssetImage('avengers.png'),
                 fit: BoxFit.cover,
               ),
             ),
