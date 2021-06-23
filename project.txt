@@ -7,16 +7,24 @@ statefull()
 
 
 MaterialApp (home :)
-appbar 
-title
-scaffold (body: )
+
+scaffold (
+appbar: 
+title:
+body: )
 
 Container (child: )
 height or width
 
 Row/Column (children)
-mainaxisalignment: main....
+mainaxisalignment: main....   
 crossaxisalignment:cross...
+
+Row : left to right 
+            top to bottom 
+
+column : top to bottom 
+ 	left to right 
 
 text()
 textfield()
