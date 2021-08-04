@@ -13,45 +13,45 @@ class _HomeState extends State<Home> {
   // var image_list =["https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60","https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60","https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"];
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(length: 3, 
-    child: 
+    // return DefaultTabController(length: 3, 
+    // child: 
+    // Scaffold(
+      // appBar: AppBar(
+    //   title:TabBar(tabs: [
+    //     Tab(child: Text("1"),),
+    //     Tab(child:  Text("2"),),
+    //     Tab(child: Text("3"),)
+    //   ],),),
+    //   body: TabBarView(children: [
+    //     App(),
+    //     App(),
+    //     App()
+    //   ]),
+    //   )
+    //   );
     Scaffold(
       appBar: AppBar(
-      title:TabBar(tabs: [
-        Tab(child: Text("1"),),
-        Tab(child:  Text("2"),),
-        Tab(child: Text("3"),)
-      ],),),
-      body: TabBarView(children: [
-        App(),
-        App(),
-        App()
-      ]),
-      )
-      );
-    // Scaffold(
-    //   appBar: AppBar(
-    //     title: Text("data"),
-    //   ),
-    //   drawer: Drawer(
-    //     child: ListView(
-    //       children: [
-    //         DrawerHeader(
-    //             child: Image.network(
-    //                 "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60")),
-    //         GestureDetector(
-    //             onTap: () {
-    //               App();
-    //             },
-    //             child: ListTile(
-    //               title: Text("hello"),
-    //             )),
-    //         ListTile(
-    //           title: Text("hello"),
-    //         ),
-    //       ],
-    //     ),
-    //   ),
+        title: Text("data"),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+                child: Image.network(
+                    "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60")),
+            GestureDetector(
+                onTap: () {
+                  App();
+                },
+                child: ListTile(
+                  title: Text("hello"),
+                )),
+            ListTile(
+              title: Text("hello"),
+            ),
+          ],
+        ),
+      ),
     // body:
     // GridView.count(
     //   crossAxisCount: 3,
@@ -212,8 +212,8 @@ class _HomeState extends State<Home> {
     //       // ),
     //     ],
     // ),
-    // );
-  }
+    );
+  // }
 }
 
 // Widget list() {

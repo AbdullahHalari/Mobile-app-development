@@ -37,4 +37,28 @@ decoration box decoration
 
 borderradius.()
 padding edgeinsets.only
-
+Covers:
+Basic Widgets for User Interface in Flutter
+1) Container
+2) SizedBox
+3) Column
+4) Row
+5) SingleChildScrollView
+6) AppBar
+7) Center
+8) Textfield
+9) ElevatedButton
+Widgets & Stylings in Flutter
+1) Padding
+2) Margin
+3) Align
+4) Positioned
+5) Stack
+6) Mediaquery
+7) Navigator
+8) ListTile
+9) Widget
+10) Circleavatar
+11) Images
+12) Gradient
+13) Boxdecoration
