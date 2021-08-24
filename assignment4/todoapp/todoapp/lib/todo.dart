@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
 class Todo extends StatefulWidget {
-  const Todo({Key  key}) : super(key: key);
+  const Todo({Key key}) : super(key: key);
 
   @override
   _TodoState createState() => _TodoState();
@@ -13,33 +14,38 @@ class _TodoState extends State<Todo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.yellow,
-        appBar: AppBar(
-          title: Center(child: Text("Todo App")),
-          backgroundColor: Colors.black,
-          toolbarHeight: 40,
-        ),
-      body: 
- 
-      ListView.builder(
+      backgroundColor: Colors.yellow,
+      appBar: AppBar(
+        title: Center(child: Text("Todo App")),
+        backgroundColor: Colors.black,
+        toolbarHeight: 40,
+      ),
+      body: ListView.builder(
           itemCount: lst.length,
           itemBuilder: (context, index) {
             return Container(
-      
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.black,
                 ),
                 margin: EdgeInsets.only(top: 15),
                 child: ListTile(
-                  title: Text("${lst[index]}" ,
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color:  Colors.white),),
+                  title: Text(
+                    "${lst[index]}",
+                    style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
                   trailing: Container(
                     width: 50,
                     child: Row(
                       children: [
                         GestureDetector(
-                          child: Icon(Icons.edit,color: Colors.white,),
+                          child: Icon(
+                            Icons.edit,
+                            color: Colors.white,
+                          ),
                           onTap: () {
                             showDialog(
                                 context: context,
@@ -67,7 +73,10 @@ class _TodoState extends State<Todo> {
                           },
                         ),
                         GestureDetector(
-                          child: Icon(Icons.delete,color: Colors.white,),
+                          child: Icon(
+                            Icons.delete,
+                            color: Colors.white,
+                          ),
                           onTap: () {
                             setState(() {
                               lst.removeAt(index);
@@ -87,16 +96,11 @@ class _TodoState extends State<Todo> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               FloatingActionButton(
-              
                 child: Text("Clear"),
-                
                 onPressed: () {
-                  
-                  
                   setState(() {
                     lst.clear();
                   });
-                  
                 },
                 backgroundColor: Colors.black,
               ),
@@ -114,28 +118,23 @@ class _TodoState extends State<Todo> {
                           ),
                           actions: [
                             ElevatedButton(
-                              
-   style: ElevatedButton.styleFrom(
-                            primary: Colors.black,  ),
-                                onPressed: () {
-                                 
-    
-                                  setState(() {
-                                    lst.add(input);
-                                  });
-                                  Navigator.of(context).pop();
-                                },
-
-                                child: Text("Add"), 
-      
-)
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.black,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  lst.add(input);
+                                });
+                                Navigator.of(context).pop();
+                              },
+                              child: Text("Add"),
+                            )
                           ],
                         );
                       });
                 },
                 child: Text("Add"),
                 backgroundColor: Colors.black,
-
               ),
             ],
           ),
